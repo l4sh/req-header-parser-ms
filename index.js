@@ -35,9 +35,13 @@ function index(req, res, cb) {
  */
 function reqHeaderParse(req, res, cb) {
 
+  var xForwardedFor = req.headers['x-forwarded-for'];
+  var acceptLanguage = req.headers['accept-language'];
   var data = {
-    ipaddress: req.connection.remoteAddress || null,
-    language: req.headers['accept-language'].split(',')[0] || null,
+    ipaddress: xForwardedFor ?
+               xForwardedFor.split(',')[0] :
+               req.connection.remoteAddress || null,
+    language: acceptLanguage ? acceptLanguage.split(',')[0] : null,
     software: req.headers['user-agent'].replace(/(^.*?\(|\).*$)/g, '') || null
   };
 
