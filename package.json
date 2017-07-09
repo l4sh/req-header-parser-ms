@@ -1,0 +1,20 @@
+{
+  "name": "req-header-parser-ms",
+  "version": "1.0.0",
+  "description": "Request Header Parser Microservice",
+  "main": "index.js",
+  "repository": "https://github.com/l4sh/req-header-parser-ms",
+  "author": "Luis Salazar",
+  "license": "MIT",
+  "devDependencies": {
+    "supertest": "^3.0.0",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "restify": "^5.0.0"
+  }
+}
