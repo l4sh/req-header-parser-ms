@@ -6,13 +6,8 @@
   "repository": "https://github.com/l4sh/req-header-parser-ms",
   "author": "Luis Salazar",
   "license": "MIT",
-  "devDependencies": {
-    "supertest": "^3.0.0",
-    "tape": "^4.6.3"
-  },
   "scripts": {
-    "start": "node index.js",
-    "test": "node test/test.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "restify": "^5.0.0"
