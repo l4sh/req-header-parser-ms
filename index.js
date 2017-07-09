@@ -3,7 +3,7 @@
 const restify = require('restify');
 const fs = require('fs');
 
-var port = Number(process.env.PORT) | 8000;
+var port = Number(process.env.PORT) | 3000;
 
 /**
  * Index view
