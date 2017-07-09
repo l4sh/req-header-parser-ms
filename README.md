@@ -1,4 +1,4 @@
-# TRequest Header Parser Microservice
+# Request Header Parser Microservice
 
 Request Header Parser Microservice developed for freeCodeCamp assignment. The
 requirements can be found at
